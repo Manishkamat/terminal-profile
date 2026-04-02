@@ -1,6 +1,9 @@
 # Fail on any command.
 set -eux pipefail
 
+sudo apt update
+sudo apt install dconf-cli
+
 # Install plug-ins (you can git-pull to update them later).
 (cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-syntax-highlighting)
 (cd ~/.oh-my-zsh/custom/plugins && git clone https://github.com/zsh-users/zsh-autosuggestions)
